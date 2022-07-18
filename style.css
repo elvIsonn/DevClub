@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 44px 0 144px 76px;
+}
+
+.link_header a {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  color: #989d9c;
+  margin-right: 23px;
+}
+
+.link_header a:hover {
+  color: #665ae1;
+}
+
+.button_header {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-transform: uppercase;
+  height: 41px;
+  width: 130px;
+
+  background: #665ae1;
+  color: #ffff;
+
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.button_header:hover,
+.button_header:active,
+.button_header:focus {
+  background-color: #adff00;
+  color: #989d9c;
+  box-shadow: 0 0 0 #000;
+}
+
+.img__logo {
+  width: 568px;
+  height: 500px;
+  margin-left: 110px;
+}
+
+.main_part {
+  display: flex;
+}
+
+.main_text {
+  padding-left: 86px;
+}
+
+.main_text h1 {
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 121px;
+  color: #989d9c;
+  text-transform: uppercase;
+}
+
+.main_text h2 {
+  font-size: 58px;
+  font-weight: 500;
+  line-height: 70px;
+  color: #515151;
+  padding-bottom: 32px;
+}
+
+.main_text p {
+  font-size: 24px;
+  line-height: 29px;
+  padding-bottom: 65px;
+  width: 515px;
+}
+
+.main_text button {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34.13px;
+  text-transform: uppercase;
+
+  width: 239px;
+  height: 64px;
+
+  background: #adff00;
+
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.main_text button:hover,
+.main_text button:active,
+.main_text button:focus {
+  background-color: #665ae1;
+  color: #ffff;
+  box-shadow: 0 0 5rem #515151;
+}
+
+@media screen and (max-width: 900px) {
+  .link_header {
+    display: none;
+  }
+
+  .img__logo {
+    display: block;
+    width: 330px;
+    height: auto;
+    margin: 80px auto 25px;
+  }
+
+  .main_part {
+    display: unset;
+  }
+
+  .main_text {
+    padding: unset;
+    text-align: center;
+  }
+
+  .main_text h1 {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .main_text h2 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .main_text p {
+    display: none;
+  }
+}
